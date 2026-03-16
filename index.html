@@ -14,7 +14,6 @@
       overflow-x: hidden;
     }
  
-    /* ── NAVBAR ── */
     .navbar {
       position: fixed;
       top: 28px;
@@ -47,7 +46,6 @@
       color: white;
     }
  
-    /* ── PAGE ── */
     .page {
       position: relative;
       width: 100%;
@@ -69,7 +67,6 @@
       object-fit: cover;
     }
  
-    /* ── FOOTER ── */
     .page-footer {
       position: fixed;
       bottom: 0;
@@ -83,9 +80,6 @@
       z-index: 100;
     }
  
-    /* ════════════════
-       HOME
-    ════════════════ */
     #home .bg::after {
       content: '';
       position: absolute;
@@ -129,9 +123,6 @@
       text-decoration: none;
     }
  
-    /* ════════════════
-       ABOUT
-    ════════════════ */
     #about .bg img {
       filter: saturate(0.5) brightness(1.1);
     }
@@ -164,17 +155,13 @@
       line-height: 1.9;
     }
  
-    /* ════════════════
-       REVIEW
-    ════════════════ */
     #review .bg {
       background: #5C7A9E;
       background-image:
         repeating-linear-gradient(60deg,  transparent, transparent 34px, rgba(255,255,255,.05) 34px, rgba(255,255,255,.05) 36px),
         repeating-linear-gradient(120deg, transparent, transparent 34px, rgba(255,255,255,.05) 34px, rgba(255,255,255,.05) 36px);
     }
- 
-    /* Judul — kiri atas */
+
     .review-title {
       position: absolute;
       top: 100px;
@@ -189,7 +176,6 @@
  
     .review-title span { color: #F5C800; }
  
-    /* Gambar orang — tengah, full bawah */
     .review-img {
       position: absolute;
       bottom: 44px;
@@ -206,7 +192,6 @@
       object-position: bottom;
     }
  
-    /* Card style */
     .review-card {
       position: absolute;
       z-index: 2;
@@ -231,14 +216,12 @@
       color: rgba(255,255,255,0.70);
     }
  
-    /* Card kiri — tengah kiri */
     .card-left {
       left: 220px;
       top: 50%;
       transform: translateY(-60%);
     }
- 
-    /* Card kanan — tengah kanan, sedikit lebih bawah */
+
     .card-right {
       right: 220px;
       top: 50%;
@@ -249,7 +232,6 @@
 </head>
 <body>
  
-<!-- NAVBAR -->
 <nav class="navbar">
   <a href="#home" class="nav-item active">
     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
@@ -265,7 +247,6 @@
   </a>
 </nav>
  
-<!-- HOME -->
 <section class="page" id="home">
   <div class="bg"><img src="heroImage.png" alt="Hero"/></div>
   <div class="hero-content">
@@ -275,7 +256,6 @@
   </div>
 </section>
  
-<!-- ABOUT -->
 <section class="page" id="about">
   <div class="bg"><img src="aboutUs.png" alt="About"/></div>
   <div class="about-content">
@@ -284,25 +264,20 @@
   </div>
 </section>
  
-<!-- REVIEW -->
 <section class="page" id="review">
   <div class="bg"></div>
  
-  <!-- Judul kiri atas -->
   <h2 class="review-title">Apa Kata Mereka tentang <span>Architecture Studio?</span></h2>
  
-  <!-- Gambar tengah -->
   <div class="review-img">
     <img src="woman.png" alt="Person"/>
   </div>
  
-  <!-- Card kiri -->
   <div class="review-card card-left">
     <p>"Hasil desainnya melebihi ekspektasi kami. Tim yang profesional, responsif, dan benar-benar memahami kebutuhan klien."</p>
     <span>Andhika Prasetyo</span>
   </div>
- 
-  <!-- Card kanan -->
+
   <div class="review-card card-right">
     <p>"Proses perencanaan hingga eksekusi berjalan sangat terstruktur. Ruang kerja kami kini terasa lebih hidup dan fungsional."</p>
     <span>Shinta Ramadhani</span>
@@ -310,7 +285,6 @@
  
 </section>
  
-<!-- FOOTER -->
 <footer class="page-footer">2026 | Architecture Studio</footer>
  
 <script>
